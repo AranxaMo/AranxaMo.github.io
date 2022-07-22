@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/ce00375316.js" crossorigin="anonymous"></script>
+    <title>Aranxa Martínez</title>
+    <link rel="shortcut icon" href="./assets/images/sunflower.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="#">
+                  <p class="logo_text"> &lt;Aranxa Martínez/&gt;</span></p>
+                </a>
+            </div>
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+            <label for="nav__checkbox" class="nav__toggle">
+              <svg class="menu" width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#742200" fill-rule="evenodd">
+                  <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/>
+                </g>
+              </svg>
+              <svg class="close" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#742200" fill-rule="evenodd"/>
+              </svg>
+            </label>
+      
+            <div class="navbar-container">
+                <div class="menu_content">
+                    <a class="menu__item" href="#home">Inicio</a>
+                    <a class="menu__item" href="#about">Sobre mi</a>
+                    <a class="menu__item" href="#projects">Proyectos</a>
+                    <a class="menu__item" href="#contact">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-container container" id="home">
+            <div class="hero__info">
+                <h1 class="hero__title">¡Hola!</h1>
+                <h2 class="hero__subtitle">Soy <span class="subtitle-name">Aranxa Martínez</span></h2>
+                <p class="hero__paragraph">Frontend Developer en progreso</p>
+                <a class="hero__cv button" href="./assets/docs/CV_Aranxa Martinez.pdf" download="">Descarga mi CV</a>
+            </div>
+            <div class="hero__socials">
+                <a href="https://www.linkedin.com/in/aranxa-martinez-oj/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/Aranxa_Mo?t=sDHzKFC8fVHT_XFEANYLzg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/AranxaMo" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="about-container container" id="about">
+            <div class="about-content">
+                <div class="about__info">
+                    <h2 class="section-title">Sobre mí</h2>
+                    <p>Mi nombres es Aranxa Martínez, soy FrontEnd Developer Jr.</p>
+                    <p>He creado proyectos de desarrollo web usando HTML, CSS y JavaScript, buscando aprender más tecnologías y poder aplicarlas a nuevos proyectos. Disfruto de ser autodidacta, compartir mis conocimientos y trabajar en equipo. </p>
+                    <p>Me gusta la cultura japonesa, ver peliculas/series y pasar tiempo con mis gatos 🐱</p>
+                </div>
+                <div class="about__img">
+                    <img src="./assets/images/profile-pic.png" alt="">
+                </div>
+            </div>
+        </section>      <!--/ABOUT-->
+
+        <section class="projects-container container" id="projects">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="slider__container">
+                <i class="fa-solid fa-arrow-left slider__arrow" id="before"></i>
+
+                <div class="project project--shown" data-id="1">
+                    <div class="project__info">
+                        <h3>Blogr Landing Page</h3>
+                        <h4>CSS3 & HTML5</h4>
+                        <p>Página web responsiva, creada a partir del reto "Blogr Landing Page" de Frontend Mentor</p>
+                        <div class="project__buttons">
+                            <a href="https://blogr-reponsive.netlify.app/" class="demo button" target="_blank">Demo</a>
+                            <a href="https://github.com/AranxaMo/Blogr-Landing-Page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <img class="img-slider" src="/assets/images/Project-01.png" alt="">
+                    </div>
+                </div>
+
+                <div class="project" data-id="2">
+                    <div class="project__info">
+                        <h3>Sunnyside Agency Landing Page</h3>
+                        <h4>CSS3, HTML5 & Vanilla JS</h4>
+                        <p>Página web responsiva, creada a partir del reto "Sunnyside agency landing page" de Frontend Mentor.</p>
+                        <div class="project__buttons">
+                            <a href="https://sunnyside-landing-page-aranxamo.netlify.app/" class="demo button" target="_blank">Demo</a>
+                            <a href="https://github.com/AranxaMo/Sunnyside-agency-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <img class="img-slider" src="/assets/images/Project-03.png" alt="">
+                    </div>
+                </div>
+
+                <div class="project" data-id="3">
+                    <div class="project__info">
+                        <h3>MathHelper</h3>
+                        <h4>CSS3, HTML5 & Vanilla JS</h4>
+                        <p>Página que nos ayuda a resolver diversos problemas matemáticos, abarcando áreas como geometría. estadística, conversión de unidades y obtención de porcentajes</p>
+                        <div class="project__buttons">
+                            <a href="https://math-helper-js.netlify.app/" class="demo button" target="_blank">Demo</a>
+                            <a href="https://github.com/AranxaMo/curso-practico-javascript" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <img class="img-slider" src="/assets/images/Project-02.png" alt="">
+                    </div>
+                </div>
+
+
+                <i class="fa-solid fa-arrow-right slider__arrow" id="next"></i>
+            </div>
+        </section>  <!--/Projects-->
+    </main>
+    
+    <footer class="footer contact-container">
+        <section class="container contact__info" id="contact">
+            <div class="contact-text">
+                <h2 class="section-title">Contacto</h2>
+                <p>Email:</p>
+                <div class="email-container">
+                    <a href="mailto:aranxa.oj@gmail.com?Subject=Quiero%20contactar%20contigo!"><span class="footer-email">aranxa.oj@gmail.com</span></a>
+                </div>
+                <p>Redes:</p>
+                <div class="contact__socials">
+                    <a href="https://www.linkedin.com/in/aranxa-martinez-oj/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Aranxa_Mo?t=sDHzKFC8fVHT_XFEANYLzg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/AranxaMo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img class="contact-img" src="./assets/images/Illustration-02.svg" alt="">
+            </div>
+        </section>          <!--Contact-->
+
+        <div class="container footer-paragraph">
+            <p>Made with love by Aranxa Martínez</p>
+        </div>
+    </footer>
+
+    
+    <script src="./scripts/slider.js"></script>
+</body>
+</html>
